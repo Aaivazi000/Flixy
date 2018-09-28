@@ -79,18 +79,26 @@
                     <view key="view" contentMode="scaleToFill" id="haw-Lt-JCw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Support for trailers coming soon." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y1z-px-1O5">
+                                <rect key="frame" x="16" y="64" width="343" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="18"/>
+                                <color key="textColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Trailers" image="projector_tabbar_item" id="euK-VM-W2E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDV-uB-fah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2837" y="49"/>
+            <point key="canvasLocation" x="2836" y="48.125937031484263"/>
         </scene>
         <!--Flixy-->
         <scene sceneID="a0U-S1-41I">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="92g-UO-2UH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="Flixy" automaticallyAdjustsScrollViewInsets="NO" id="qRH-to-XzT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zcZ-PB-6ql">
@@ -102,6 +110,7 @@
                         <segue destination="rxh-3K-UAa" kind="relationship" relationship="rootViewController" id="CPF-Tz-lzc"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92g-UO-2UH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="93.599999999999994" y="49.925037481259373"/>
         </scene>
@@ -112,6 +121,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Flixy" id="jvs-90-IdG"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="jII-06-HEm">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">

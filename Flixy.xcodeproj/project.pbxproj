@@ -18,6 +18,7 @@
 		E68F24B1215AF36D00F81B7E /* FlixyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F24B0215AF36D00F81B7E /* FlixyUITests.swift */; };
 		E6A1C039215D3B5000C76B75 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1C038215D3B5000C76B75 /* NowPlayingViewController.swift */; };
 		E6A1C03B215D6DA300C76B75 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1C03A215D6DA300C76B75 /* MovieCell.swift */; };
+		E6A1C03D215DB88B00C76B75 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1C03C215DB88B00C76B75 /* ConnectionCheck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E68F24B2215AF36D00F81B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6A1C038215D3B5000C76B75 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		E6A1C03A215D6DA300C76B75 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		E6A1C03C215DB88B00C76B75 /* ConnectionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
 		FA7A77749BF29678458B81F5 /* Pods-FlixyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlixyTests/Pods-FlixyTests.release.xcconfig"; sourceTree = "<group>"; };
 		FF305FCE636C3E3314846BA8 /* Pods_FlixyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD197DE59D1EB12B7778F97 /* Pods-Flixy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flixy/Pods-Flixy.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		E68F248F215AF36B00F81B7E /* Flixy */ = {
 			isa = PBXGroup;
 			children = (
+				E6A1C03C215DB88B00C76B75 /* ConnectionCheck.swift */,
 				E6A1C038215D3B5000C76B75 /* NowPlayingViewController.swift */,
 				E68F2490215AF36B00F81B7E /* AppDelegate.swift */,
 				E68F2494215AF36B00F81B7E /* Main.storyboard */,
@@ -402,6 +405,7 @@
 			files = (
 				E6A1C039215D3B5000C76B75 /* NowPlayingViewController.swift in Sources */,
 				E68F2491215AF36B00F81B7E /* AppDelegate.swift in Sources */,
+				E6A1C03D215DB88B00C76B75 /* ConnectionCheck.swift in Sources */,
 				E6A1C03B215D6DA300C76B75 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

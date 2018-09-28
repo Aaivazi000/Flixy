@@ -9,6 +9,7 @@
 import UIKit
 import AlamofireImage
 import KRProgressHUD
+import SystemConfiguration
 
 class NowPlayingViewController: UIViewController, UITableViewDataSource {
 
@@ -16,10 +17,18 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     var movies: [[String: Any]] = []
     var refreshControl: UIRefreshControl!
-
+    let alertController = UIAlertController(title: "Cannot Get Movies", message: "Please check your network connection", preferredStyle: .alert)
+    let cancelAction = UIAlertAction(title: "Try Again", style: .cancel) { (action) in
+    }
+    
+    
     //Function run when view is loaded
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        alertController.addAction(cancelAction)
         
         //Handling Now Playing tableView
         tableView.dataSource = self
@@ -33,6 +42,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         
         //Get Now Playing Movies
         fetchNowPlayingMovies()
+        
     }
     
     @objc func didPullToRefresh(_ refreshControl: UIRefreshControl) {
@@ -40,6 +50,12 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     }
     
     func fetchNowPlayingMovies() {
+        
+        //Check for Network Connection
+        if ConnectionCheck.isConnectedToNetwork() == false {
+            present(alertController, animated: true)
+        }
+        
         //Show KRProgress
         KRProgressHUD
             .set(style: .custom(background: .white, text: .white, icon: nil))
@@ -64,9 +80,9 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
                 //Stop the Refreshing After Data is loaded
                 self.refreshControl.endRefreshing()
             }
-        //End KRPrgress
-         KRProgressHUD.dismiss()
-            
+        
+            //End KRPrgress
+            KRProgressHUD.dismiss()
         }
         task.resume()
     }
