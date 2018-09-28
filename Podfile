@@ -6,6 +6,9 @@ target 'Flixy' do
   use_frameworks!
 
   # Pods for Flixy
+	pod 'AlamofireImage', '~> 3.4'
+	pod "KRProgressHUD"
+	pod "KRActivityIndicatorView"
 
   target 'FlixyTests' do
     inherit! :search_paths
