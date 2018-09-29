@@ -1,5 +1,7 @@
 # Project 1 - *Flixy*
 
+![Logo]()
+
 **Flixy** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 Time spent: **7** hours spent in total
@@ -24,7 +26,10 @@ The following **stretch** user stories are implemented:
 
 The following **additional** user stories are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
+- [x] I embeded a Tab Bar Controller in the app and there is a Trailers page which I hope to implement very soon (+1-3pts)
+- [x] I designed my own app logo (see top of readme) and Launch logo (see below)
+    - Launch Logo
+        - ![Launch Logo]()
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
@@ -45,7 +50,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+No challenges encountered.
 
 ## License
 
