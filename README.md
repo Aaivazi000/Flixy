@@ -1,6 +1,6 @@
 # Project 1 - *Flixy*
 
-![Logo]()
+![Logo](https://github.com/Aaivazi000/Flixy/blob/master/Icon-App-83.5x83.5%402x.png)
 
 **Flixy** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
