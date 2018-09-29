@@ -29,7 +29,7 @@ The following **additional** user stories are implemented:
 - [x] I embeded a Tab Bar Controller in the app and there is a Trailers page which I hope to implement very soon (+1-3pts)
 - [x] I designed my own app logo (see top of readme) and Launch logo (see below)
     - Launch Logo
-        - ![Launch Logo]()
+        - ![Launch Logo](https://github.com/Aaivazi000/Flixy/blob/master/Icon-App-83.5x83.5%402x%20copy.png)
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
