@@ -29,7 +29,11 @@ class UpcomingDetailViewController: UIViewController {
        //Pass movie data to UI Elements
         if let upcomingMovie = upcomingMovie  {
             upcomingtitleLabel.text = upcomingMovie["title"] as? String
-            voteLabel.text = upcomingMovie["vote_average"] as? String
+            var voteString = String(describing: upcomingMovie["vote_average"])
+            voteString = voteString.replacingOccurrences(of: "Optional", with: "")
+            voteString = voteString.replacingOccurrences(of: "(", with: "")
+            voteString = voteString.replacingOccurrences(of: ")", with: "")
+            voteLabel.text = voteString
             upcomingdateLabel.text = upcomingMovie["release_date"] as? String
             upcomingoverviewLabel.text = upcomingMovie["overview"] as? String
             

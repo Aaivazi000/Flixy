@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     var movie: [String: Any]?
+    @IBOutlet weak var voteavgLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,11 @@ class DetailViewController: UIViewController {
             movieTitleLabel.text = movie["title"] as? String
             releaseDateLabel.text = movie["release_date"] as? String
             descriptionLabel.text = movie["overview"] as? String
+            var voteavgString = String(describing: movie["vote_average"])
+            voteavgString = voteavgString.replacingOccurrences(of: "Optional", with: "")
+            voteavgString = voteavgString.replacingOccurrences(of: "(", with: "")
+            voteavgString = voteavgString.replacingOccurrences(of: ")", with: "")
+            voteavgLabel.text = voteavgString
             
             //Get URLs for backdrop image & poster image
             let backDropPathString = movie["backdrop_path"] as! String

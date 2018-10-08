@@ -15,13 +15,23 @@ class PlayTrailerViewController: UIViewController {
     var trailer: [String] = []
     @IBOutlet weak var trailerWebView: UIWebView!
     
+    @IBOutlet weak var backButtonItem: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Set up back button
+        backButtonItem.tintColor = UIColor.white
+        backButtonItem.target = self
+        backButtonItem.action = #selector(back)
+        
+        //Get trailer & play
         playtrailer()
     }
     
+    @objc func back(sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func playtrailer() {
         if let movieid = movieid {
