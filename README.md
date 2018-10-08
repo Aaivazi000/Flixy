@@ -74,40 +74,41 @@ No challenges encountered.
 
 **Flixy** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **7** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
 - [x] User can tap a cell to see a detail view (+5pts)
-- [ ] User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView (+5pts)
+- [x] User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView (+5pts)
 
 The following **stretch** features are implemented:
 
-- [ ] User can tap a poster in the collection view to see a detail screen of that movie (+3pts)
-- [ ] In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer (+3pts)
-- [ ] Customize the navigation bar (+1pt)
-- [ ] List in any optionals you didn't finish from last week (+1-3pts)
-   - ...
-   - ...
+- [x] User can tap a poster in the collection view to see a detail screen of that movie (+3pts)
+- [x] In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer (+3pts)
+- [x] Customize the navigation bar (+1pt)
+    - Navigation bar throughout the app is customized to a color scheme consisting of black, dark grey, white, and yellow.
+- [x] Users sees a yellow box when the movie poster has not loaded yet and a white box when the backdrop poster has not loaded.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] The movies shown in the Trailers tab Collection View are Upcoming Movies.
+- [x] The detail view presented after selecting a TableView cell (in Now Playing) shows the vote average for the movie.
+- [x] The detail view presented after selecting a CollectionView cell (in Trailers) shows the vote average for the movie.
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. How to implement the search bar
+2. How to overlay a play button on a UIImage (to get rid of the "Watch Trailer" button)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/Nh2buqV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+If you cannot see the gif walthrough due to length restrictions [click here to view in browser](https://imgur.com/Nh2buqV).
 
 ## Notes
 
