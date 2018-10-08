@@ -18,7 +18,7 @@ class TrailersViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
 
         collectionView.dataSource = self
-        
+        fetchUpcomingMovies()
         
     }
     
@@ -34,31 +34,20 @@ class TrailersViewController: UIViewController, UICollectionViewDataSource {
         let movie = movies[indexPath.item]
         
         //Get movie poster info for the cell
-        let posterPathString = movie["poster_path"] as! String
-        let baseURLString = "https://image.tmdb.org/t/p/w500"
-        let posterPathURL = URL(fileURLWithPath: baseURLString + posterPathString)
-        cell.posterImageView.af_setImage(withURL: posterPathURL)
-        
+        if let posterPathString = movie["poster_path"] as? String {
+            let baseURLString = "https://image.tmdb.org/t/p/w500"
+            let posterPathURL = URL(string: baseURLString + posterPathString)!
+            cell.posterImageView.af_setImage(withURL: posterPathURL)
+        }
         return cell
     }
     
     //Function to get movies
-    func fetchNowPlayingMovies() {
+    func fetchUpcomingMovies() {
         
-        //Check for Network Connection
-        /*if ConnectionCheck.isConnectedToNetwork() == false {
-            present(alertController, animated: true)
-        }
-        */
-        //Show KRProgress
-        /*KRProgressHUD
-            .set(style: .custom(background: .white, text: .white, icon: nil))
-            .set(maskType: .white)
-            .show()
-        */
         
-        // Make Network Request for Now Playing Movies
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
+        // Make Network Request for Upcoming Movies
+        let url = URL(string: "https://api.themoviedb.org/3/movie/upcoming?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US&page=1&region=US")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         // The reloadIgnoringLocalCacheData means everytime the request is done the app will pull data from the MD API even when it has data stored in Cache.
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
@@ -82,17 +71,15 @@ class TrailersViewController: UIViewController, UICollectionViewDataSource {
         task.resume()
     }
     
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let cell = sender as! UICollectionViewCell
+        if let indexPath = collectionView.indexPath(for: cell) {
+            let upcomingMovie = movies[indexPath.item]
+            let upcomingdetailViewController = segue.destination as! UpcomingDetailViewController
+            upcomingdetailViewController.upcomingMovie = upcomingMovie
+        }
     }
-    */
+    
+
 //The bracket below closes out the class
 }
