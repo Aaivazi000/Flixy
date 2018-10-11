@@ -37,16 +37,21 @@ class UpcomingDetailViewController: UIViewController {
             //Get URL's for both UI Images
             let checkposter = upcomingMovie["poster_path"] as? String
             let checkbackposter = upcomingMovie["backdrop_path"] as? String
-            if checkposter != nil && checkbackposter != nil {
-                let backposterPathString = upcomingMovie["backdrop_path"] as! String
+            let basePathString = "https://image.tmdb.org/t/p/w500"
+            if checkposter != nil {
+                //Make front poster URL
                 let frontposterPathString = upcomingMovie["poster_path"] as! String
-                let basePathString = "https://image.tmdb.org/t/p/w500"
-                let backposterURL = URL(string: basePathString + backposterPathString)!
                 let frontposterURL = URL(string: basePathString + frontposterPathString)!
-            
-                //Set Poster URL's to UI Image Views
-                backposterImageView.af_setImage(withURL: backposterURL)
+                //Set Poster URL to UI Image view
                 frontposterImageView.af_setImage(withURL: frontposterURL)
+            }
+            if checkbackposter != nil {
+                //Make back poster URL
+                let backposterPathString = upcomingMovie["backdrop_path"] as! String
+                let backposterURL = URL(string: basePathString + backposterPathString)!
+            
+                //Set Poster URL's to UI Image View
+                backposterImageView.af_setImage(withURL: backposterURL)
             }
         }
         
