@@ -10,6 +10,7 @@ import UIKit
 
 class TrailersViewController: UIViewController, UICollectionViewDataSource {
 
+    
     //Declarations & UI Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     var movies: [[String: Any]] = []

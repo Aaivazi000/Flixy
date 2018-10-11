@@ -29,11 +29,8 @@ class UpcomingDetailViewController: UIViewController {
        //Pass movie data to UI Elements
         if let upcomingMovie = upcomingMovie  {
             upcomingtitleLabel.text = upcomingMovie["title"] as? String
-            var voteString = String(describing: upcomingMovie["vote_average"])
-            voteString = voteString.replacingOccurrences(of: "Optional", with: "")
-            voteString = voteString.replacingOccurrences(of: "(", with: "")
-            voteString = voteString.replacingOccurrences(of: ")", with: "")
-            voteLabel.text = voteString
+            let voteString = String(describing: upcomingMovie["vote_average"])
+            voteLabel.text = formatVoteString(voteAvgString: voteString)
             upcomingdateLabel.text = upcomingMovie["release_date"] as? String
             upcomingoverviewLabel.text = upcomingMovie["overview"] as? String
             
@@ -54,6 +51,27 @@ class UpcomingDetailViewController: UIViewController {
         }
         
         
+    }
+    
+    func formatVoteString (voteAvgString: String) -> String {
+        //Get rid of Optional and Parenthesis in input string
+        var voteratingString = voteAvgString
+        voteratingString = voteratingString.replacingOccurrences(of: "Optional", with: "")
+        voteratingString = voteratingString.replacingOccurrences(of: "(", with: "")
+        voteratingString = voteratingString.replacingOccurrences(of: ")", with: "")
+       
+        //Check if string is 0
+        let zerooneString = "0"
+        let zerotwoString = "0.0"
+        if (voteratingString == zerooneString) || (voteratingString == zerotwoString) {
+            voteratingString = "No Rating"
+        }
+        else {
+            let denominatorString = "/10"
+            voteratingString = voteratingString + denominatorString
+        }
+        //Return correctly formatted Movie Rating
+        return voteratingString
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
