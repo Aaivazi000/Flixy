@@ -68,7 +68,7 @@ No challenges encountered.
     See the License for the specific language governing permissions and
     limitations under the License.
     
-# Project 2 - *FLixy*
+# Project 2 - *Flixy*
 
 ![Logo](https://github.com/Aaivazi000/Flixy/blob/master/Icon-App-83.5x83.5%402x.png)
 
@@ -131,6 +131,8 @@ Describe any challenges encountered while building the app.
     limitations under the License.
     
 # Lab 3 - *Flixy*
+
+![Logo](https://github.com/Aaivazi000/Flixy/blob/master/Icon-App-83.5x83.5%402x.png)
 
 **Flixy** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
