@@ -20,9 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HdT-Ce-KFU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HdT-Ce-KFU">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -65,7 +64,13 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.59202293760000002" green="1" blue="0.69739672880000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HdT-Ce-KFU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N4l-OL-T8O"/>
+                            <constraint firstAttribute="bottom" secondItem="HdT-Ce-KFU" secondAttribute="bottom" id="bbK-FQ-YPG"/>
+                            <constraint firstAttribute="trailing" secondItem="HdT-Ce-KFU" secondAttribute="trailing" id="bto-T3-gkI"/>
+                            <constraint firstItem="HdT-Ce-KFU" firstAttribute="top" secondItem="j1X-3R-k7f" secondAttribute="bottom" id="wfg-Fq-xBD"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" id="5hD-pu-xtI"/>
                     <navigationItem key="navigationItem" title="Now Playing" largeTitleDisplayMode="always" id="7Ne-fD-Mpy"/>
@@ -75,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3103.1999999999998" y="44.527736131934034"/>
+            <point key="canvasLocation" x="2140" y="45"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="nyY-sB-gFX">
@@ -168,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZd-UP-NPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4068" y="44.527736131934034"/>
+            <point key="canvasLocation" x="3122" y="45"/>
         </scene>
         <!--Now Playing Trailer View Controller-->
         <scene sceneID="0OP-ct-osL">
@@ -203,7 +208,7 @@
                                 <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.59202293760000002" green="1" blue="0.69739672880000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="backBarButtonItem" destination="gk4-5L-Cxv" id="g9B-Gf-zDF"/>
@@ -212,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OC-DR-kd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4965.6000000000004" y="44.527736131934034"/>
+            <point key="canvasLocation" x="4087" y="45"/>
         </scene>
         <!--Trailers-->
         <scene sceneID="ceM-vA-74V">
@@ -261,7 +266,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.59202293760000002" green="1" blue="0.69739672880000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Trailers" id="Mhk-1R-U9d"/>
                     <connections>
@@ -270,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDV-uB-fah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1652" y="765.06746626686663"/>
+            <point key="canvasLocation" x="1082" y="765"/>
         </scene>
         <!--Upcoming Detail View Controller-->
         <scene sceneID="xRV-II-chR">
@@ -354,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKl-eM-BEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2608.8000000000002" y="764.16791604197908"/>
+            <point key="canvasLocation" x="2004" y="765"/>
         </scene>
         <!--Play Trailer View Controller-->
         <scene sceneID="V3j-66-r1H">
@@ -390,7 +395,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.59202293760000002" green="1" blue="0.69739672880000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="backButtonItem" destination="UdC-uv-sa8" id="YCh-gq-MpN"/>
@@ -399,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUy-mr-yPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3596" y="764.16791604197908"/>
+            <point key="canvasLocation" x="2858" y="764"/>
         </scene>
         <!--Flixy-->
         <scene sceneID="a0U-S1-41I">
@@ -418,7 +423,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="92g-UO-2UH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1652.48" y="44.910078693786545"/>
+            <point key="canvasLocation" x="1142" y="45"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vU9-2w-evf">
