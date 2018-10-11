@@ -32,7 +32,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         
         //Handling Now Playing tableView
         tableView.dataSource = self
-        tableView.rowHeight = 134
+        //tableView.rowHeight = 134
         
         //Refresh Control Setup
         refreshControl = UIRefreshControl()
