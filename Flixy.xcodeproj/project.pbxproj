@@ -16,6 +16,7 @@
 		E6497627216EC0C1006582B2 /* NowPlayingTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6497626216EC0C1006582B2 /* NowPlayingTrailerViewController.swift */; };
 		E66D26A7216AD210007D0BC5 /* UpcomingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66D26A6216AD210007D0BC5 /* UpcomingDetailViewController.swift */; };
 		E66D26A9216AE422007D0BC5 /* PlayTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66D26A8216AE422007D0BC5 /* PlayTrailerViewController.swift */; };
+		E67F59C9218BA9AE00076E14 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67F59C8218BA9AE00076E14 /* Movie.swift */; };
 		E68F2491215AF36B00F81B7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F2490215AF36B00F81B7E /* AppDelegate.swift */; };
 		E68F2496215AF36B00F81B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68F2494215AF36B00F81B7E /* Main.storyboard */; };
 		E68F2498215AF36D00F81B7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68F2497215AF36D00F81B7E /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		E6497626216EC0C1006582B2 /* NowPlayingTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingTrailerViewController.swift; sourceTree = "<group>"; };
 		E66D26A6216AD210007D0BC5 /* UpcomingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingDetailViewController.swift; sourceTree = "<group>"; };
 		E66D26A8216AE422007D0BC5 /* PlayTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayTrailerViewController.swift; sourceTree = "<group>"; };
+		E67F59C8218BA9AE00076E14 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E68F248D215AF36B00F81B7E /* Flixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68F2490215AF36B00F81B7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E68F2495215AF36B00F81B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			children = (
 				E6A1C03A215D6DA300C76B75 /* MovieCell.swift */,
 				E62623C921692226007A3A4E /* PosterCell.swift */,
+				E67F59C8218BA9AE00076E14 /* Movie.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				E6A1C03D215DB88B00C76B75 /* ConnectionCheck.swift in Sources */,
 				E66D26A9216AE422007D0BC5 /* PlayTrailerViewController.swift in Sources */,
 				E6497627216EC0C1006582B2 /* NowPlayingTrailerViewController.swift in Sources */,
+				E67F59C9218BA9AE00076E14 /* Movie.swift in Sources */,
 				E6A1C03B215D6DA300C76B75 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
